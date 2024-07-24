@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.item {
+  background: #f6f6fe;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  min-height: 264px;
+}
+
+.item h2 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.item ul {
+  padding: 0;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item ul li {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.gallery-item img {
+  width: 360px;
+  height: 300px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#name-input:hover {
+  border: 1px solid #000;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form label:first-child {
+  margin-bottom: 8px;
+}
+
+.login-form label input {
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.login-form label input:hover {
+  border: 1px solid #000;
+}
+
+.login-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  margin-top: 16px;
+  background: #4e75ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.change-color {
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
+}
+
+#controls {
+  background-color: #f6f6fe;
+  width: 486px;
+  height: 104px;
+  margin: 0 auto 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  padding: 8px 8px 8px 72px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#controls input:hover {
+  border: 1px solid #000;
+}
+
+#controls button[data-create] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+#controls button[data-create]:hover {
+  background-color: #6c8cff;
+}
+
+#controls button[data-destroy] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #ff4e4e;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+#controls button[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  background-color: #f6f6fe;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 486px;
+  min-height: 134px;
+  border-radius: 8px;
+  padding: 32px;
+  gap: 44px;
+  margin: 0 auto;
+}
