@@ -15,23 +15,25 @@ const createBoxes = (amount) => {
   newBoxes.innerHTML = "";
   size = 30;
   const boxesArr = [];
-  amount = boxNumber.value;
-  if (amount >= 0 && amount <= 100) {
+  if (amount >= 1 && amount <= 100) {
     for (let i = 0; i < amount; i++) {
       boxesArr.push(
         `<div style="height:${size}px;width:${size}px;background-color:${getRandomHexColor()}"></div>`
       );
       size += 10;
     }
-    const boxes = boxesArr.map((box) => box).join(" ");
-    console.log(boxes);
-    newBoxes.insertAdjacentHTML("beforeend", boxes);
+    newBoxes.insertAdjacentHTML(
+      "beforeend",
+      boxesArr.map((box) => box).join("")
+    );
   } else {
     alert("Wrong number!");
   }
 };
 
-createButton.addEventListener("click", createBoxes);
+createButton.addEventListener("click", () => {
+  createBoxes(boxNumber.value);
+});
 
 const destroyBoxes = () => (newBoxes.innerHTML = "");
 

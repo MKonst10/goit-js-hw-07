@@ -12,4 +12,4 @@ const onFormInput = () => {
     nameSpan.innerHTML = "Anonymous";
   }
 };
-inputEl.addEventListener("change", onFormInput);
+inputEl.addEventListener("input", onFormInput);

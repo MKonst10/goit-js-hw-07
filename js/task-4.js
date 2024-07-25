@@ -12,8 +12,9 @@ const onFormSubmit = (event) => {
     loginForm.elements.password.value === ""
   ) {
     alert("All form fields must be filled in");
+  } else {
+    console.log(formValues);
   }
-  console.log(formValues);
 
   loginForm.reset();
 };

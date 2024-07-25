@@ -25,25 +25,6 @@ const images = [
   },
 ];
 
-// const createGalleryItem = (galleryImg) => {
-//   const galleryItem = document.createElement("li");
-//   galleryItem.classList.add("gallery-item");
-//   const galleryItemImg = document.createElement("img");
-
-//   galleryItemImg.src = galleryImg.url;
-//   galleryItemImg.alt = galleryImg.alt;
-
-//   galleryItem.append(galleryItemImg);
-
-//   return galleryItem;
-// };
-
-// const galleryCardsInfo = images.map((galleryCard) =>
-//   createGalleryItem(galleryCard)
-// );
-
-// galleryList.append(...galleryCardsInfo);
-
 const galleryList = document.querySelector(".gallery");
 
 const createGalleryItem = (galleryImg) => {
